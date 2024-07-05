@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordometro</title>
+    <link rel="icon" type="image/png" href="imgs/icon_app.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <!-- ENTRADA -->
+        <div id="entrada" class="box">
+
+            <div class="titulo_app">
+                <img src="imgs/icon_app.png">
+                <div>
+                    <h1>Gordometro</h1>
+                    <p>Calcule seu IMC com Humor</p>
+                </div>
+            </div>
+
+            <label for="i_nome">Digite seu Nome:</label>
+            <input type="text" id="i_nome">
+
+            <label for="i_peso">Digite seu Peso (Kg):</label>
+            <input type="text" id="i_peso">
+
+            <label for="i_altura">Digite sua Altura (Mt):</label>
+            <input type="text" id="i_altura">
+
+            <button type="button" id="btn_calcular">Calcular IMC</button>
+        </div>
+
+        <!-- SAÍDA -->
+        <div id="saida" class="box d-none">
+            <div class="titulo_saida">
+                <h1>Seu IMC</h1>
+                <p>Leve na esportiva, o resultado é bem humorado!</p>
+            </div>
+
+            <div id="s_resultado">
+                <img id="img_imc" src="imgs/peso_1.png">
+                <div>
+                    <p id="valor_imc">00</p>
+                    <p id="user_nome">Nome da Vítima</p>
+                    <p id="resultado_imc">Frase Engraçada...</p>
+                </div>
+            </div>
+
+            <button type="button" id="btn_voltar">Calcular Novamente</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
